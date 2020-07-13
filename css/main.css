@@ -97,7 +97,7 @@ textarea {
 
 
 /* Global styles */
-header, .form {
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,12 +187,19 @@ nav ul li a {
   width: 100%;
 }
 
-.features h2, ul li {
+.features, h3, h2, ul li {
   color: whitesmoke;
 }
 
+.features-items ul li {
+  display: flex;
+  justify-content: space-evenly;
+  width: 55%;
+}
+
+
 /* form  */
-.form-description {
+main .form-description {
   background: rgb(77, 112, 77);
   padding: 0;
 }
@@ -200,13 +207,17 @@ nav ul li a {
 /* reviews */
 .reviews div img {
   object-fit: contain;
-  width: 100%;
-  padding: 10px 0;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  /* padding: 10px 0; */
 
 }
 
 .reviews {
   background: rgb(24, 65, 44);
+  padding: 15px 30px;
 }
 
 
@@ -235,11 +246,22 @@ footer .flex-container {
 }
 
 
+/* ABOUT page  */
+.mission {
+  background: rgb(77, 112, 77);
+  padding: 0;
+}
 
-/* media queriers */
+.contact-section {
+  background: rgb(24, 65, 44);
+}
 
 
 
+/* FAQ page */
+.questions {
+  background: rgb(77, 112, 77);
+}
 
 
 
@@ -332,16 +354,51 @@ footer .flex-container {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+/* Tablet  */
+@media only screen and (min-width: 768px) {
+  .feature-items {
+    display: flex;
+    flex-flow: column wrap;
+  }
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+  .features-items ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+  }
+  .features-items ul li {
+    min-width: 45%;
+  } 
+  .reviews {
+    display: flex;
+  }
+  .reviews div img {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  .content-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  section .reviews .content-wrapper {
+    width: 50%;
+  }
+  /* .feature-items ul li {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+  } */
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+  .feature-items ul li p {
+    min-width: 33.3%;
+  }
+
 }
 
 /* ==========================================================================

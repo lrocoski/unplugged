@@ -106,16 +106,23 @@ header, .form {
 
 li {
   list-style: none;
+  /* padding: 0 10px; */
 }
 
 a {
   text-decoration: none;
 }
 
-
+.content-wrapper {
+  width: 95%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
 /* Typography */
-
+p, h4 {
+  color: whitesmoke;
+}
 
 
 
@@ -124,15 +131,13 @@ a {
 header {
   background: black;
 }
-
+header nav {
+  width: 60%;
+}
 .hero-area {
   border-bottom: 2px solid rgb(42, 42, 43);
   width: 95%;
-}
 
-.header-divider {
-  flex-basis: 100%;
-  width: 0;
 }
 
 nav ul {
@@ -142,18 +147,78 @@ nav ul {
 
 nav ul li a {
   color: whitesmoke;
-  width: 95%;
+  padding: 20px;
+}
+.hero-text h1 {
+  color: whitesmoke;
+  width: 80%;
+  padding: 40px;
+  line-height: 1.5;
 }
 
+.hero-image {
+  background: url('../img/jake-melara-30679-unsplash.jpg');
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  height: 650px;
+
+
+}
+.hero-area a img {
+  object-fit: contain;
+  width: 85%;
+  height: 50px;
+  margin: 0;
+  padding: 20px;
+}
 
 
 /* Main styles */
 
+/* features */
+.features {
+  background: url('../img/rawpixel-800820-unsplash1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 731px;
+  width: 100%;
+}
 
+.features h2, ul li {
+  color: whitesmoke;
+}
 
+/* form  */
+.form-description {
+  background: rgb(77, 112, 77);
+  padding: 0;
+}
+
+/* reviews */
+.reviews div img {
+  object-fit: contain;
+  width: 100%;
+  padding: 10px 0;
+
+}
+
+.reviews {
+  background: rgb(24, 65, 44);
+}
 
 
 /* Footer styles */
+footer {
+  background: rgb(39, 44, 41);
+}
+footer .flex-container {
+  width: 55%;
+  margin: 50px 0;
+}
+
 .flex-container {
   display: flex;
   justify-content: space-evenly;
@@ -179,7 +244,7 @@ nav ul li a {
 
 
 
-
+/*
 ==========================================================================
    Helper classes
    ========================================================================== */

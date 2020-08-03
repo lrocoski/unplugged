@@ -356,6 +356,16 @@ footer .flex-container {
    ========================================================================== */
 /* Tablet  */
 @media only screen and (min-width: 768px) {
+  header div img,nav {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .hero-area a,img {
+    border-bottom: none;
+  }
+
   .feature-items {
     display: flex;
     flex-flow: column wrap;

@@ -198,6 +198,10 @@ nav ul li a {
   background-attachment: sc;
 }
 
+.fontawesome-icon {
+  padding: 0 15px 0 0;
+  font-size: 2.1rem;
+}
 
 /* form  */
 main .form-description {

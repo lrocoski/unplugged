@@ -131,9 +131,7 @@ p, h4 {
 header {
   background: black;
 }
-header nav {
-  width: 60%;
-}
+
 .hero-area {
   border-bottom: 2px solid rgb(42, 42, 43);
   width: 95%;
@@ -262,10 +260,10 @@ footer .flex-container {
 }
 
 .map figure {
-  width: 95%;
+  /* width: 95%; */
   height: 0;
   padding-bottom: 125%;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 .map iframe {
@@ -388,14 +386,21 @@ footer .flex-container {
    ========================================================================== */
 /* Tablet  */
 @media only screen and (min-width: 768px) {
-  header div img,nav {
+  /* header div img,nav {
     display: flex;
     justify-content: space-between;
 
-  }
-
+  } */
   .hero-area a,img {
     border-bottom: none;
+  }
+
+  div, .hero-area {
+    display: flex;
+    justify-content: space-between;
+  }
+  div, nav, ul {
+    margin: 16px 40px;
   }
 
   .feature-items {

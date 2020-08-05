@@ -162,6 +162,8 @@ nav ul li a {
   background-repeat: no-repeat;
   background-color: #000000;
   height: 650px;
+  padding: 0;
+  margin: 0;
 
 
 }
@@ -197,8 +199,8 @@ nav ul li a {
 }
 
 .fontawesome-icon {
-  padding: 0 15px 0 0;
-  font-size: 2.1rem;
+  padding: 0 20px 0 0;
+  font-size: 2.4rem;
 }
 
 /* form  */
@@ -403,6 +405,16 @@ footer .flex-container {
     margin: 16px 40px;
   }
 
+  .features-items ul li {
+    width: 45%;
+    font-size: 2rem;
+    padding: 0px;
+    margin: 0 auto;
+  }
+  .features-items p {
+    font-size: 1.3rem;
+  }
+
   .feature-items {
     display: flex;
     flex-flow: column wrap;
@@ -411,11 +423,8 @@ footer .flex-container {
   .features-items ul {
     display: flex;
     justify-content: space-evenly;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
   }
-  .features-items ul li {
-    min-width: 45%;
-  } 
   .reviews {
     display: flex;
   }

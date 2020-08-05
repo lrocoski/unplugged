@@ -183,7 +183,7 @@ nav ul li a {
   background: url('../img/rawpixel-800820-unsplash1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 731px;
+  /* height: 731px; */
   width: 100%;
 }
 
@@ -397,13 +397,13 @@ footer .flex-container {
     border-bottom: none;
   }
 
-  div, .hero-area {
+  .hero-area {
     display: flex;
     justify-content: space-between;
   }
-  div, nav, ul {
+  /* div, nav, ul {
     margin: 16px 40px;
-  }
+  } */
 
   .features-items ul li {
     width: 45%;
@@ -429,11 +429,21 @@ footer .flex-container {
     display: flex;
   }
   .reviews div img {
-    width: 50%;
+    /* width: 50%; */
     margin: 0;
     padding: 0;
   }
   .content-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  .first-review {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+  }
+  figure {
     margin: 0;
     padding: 0;
   }
